@@ -6,7 +6,7 @@ This repository contains an unofficial implementation for MeanFlow  on CIFAR-10.
 
 ```bash
 # Clone this repository
-git clone xxx
+git clone https://github.com/Boo-0102/MeanFlow.git
 cd MeanFlow
 
 # Install dependencies
@@ -50,8 +50,9 @@ sh scripts/evaluate.sh
 ## Acknowledgements
 
 This implementation builds upon:
-- [SongUnet](https://github.com/NVlabs/edm/blob/main/training/networks.py) (model)
-- [REPA](https://github.com/sihyun-yu/REPA/tree/main) (training pipeline)
+- [SongUnet](https://github.com/NVlabs/edm/blob/main/training/networks.py)
+- [REPA](https://github.com/sihyun-yu/REPA/tree/main)
+- [MeanFlow](https://github.com/zhuyu-cs/MeanFlow)
 
 ## Citation
 If you find this implementation useful, please cite the original paper:
