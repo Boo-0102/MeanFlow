@@ -9,7 +9,7 @@ This repository provides an unofficial PyTorch implementation of the paper **[Me
 git clone https://github.com/Boo-0102/MeanFlow.git
 cd MeanFlow
 
-# Create and activate a conda environment:**
+# Create and activate a conda environment:
 conda create -n meanflow python==3.10
 conda activate meanflow
 
