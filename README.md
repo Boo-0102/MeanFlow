@@ -1,6 +1,6 @@
 # MeanFlow: Unofficial Implementation on CIFAR-10
 
-This repository contains an unofficial, minimalist implementation of MeanFlow, a single-step flow matching model for image generation.
+This repository contains an unofficial implementation for MeanFlow  on CIFAR-10.
 
 ## Installation
 
