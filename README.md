@@ -1,6 +1,6 @@
 # MeanFlow: Unofficial Implementation on CIFAR-10
 
-This repository contains an unofficial implementation for MeanFlow  on CIFAR-10.
+This repository provides an unofficial PyTorch implementation of the paper **[Mean Flows for One-step Generative Modeling](https://arxiv.org/abs/2505.13447)** on the CIFAR-10 dataset.
 
 ## Installation
 
@@ -9,8 +9,11 @@ This repository contains an unofficial implementation for MeanFlow  on CIFAR-10.
 git clone https://github.com/Boo-0102/MeanFlow.git
 cd MeanFlow
 
-# Install dependencies
+# Create and activate a conda environment:**
 conda create -n meanflow python==3.10
+conda activate meanflow
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -19,11 +22,13 @@ pip install -r requirements.txt
 ## Training 
 
 **Unconditional**
+- To train an unconditional model, run the following script:
 ```bash
 cd MeanFlow
 sh scripts/train.sh
 ```
 **Conditional**
+- To train a class-conditional model with CFG, run the following script:
 ```bash
 cd MeanFlow
 sh scripts/train_cfg.sh
@@ -41,7 +46,7 @@ sh scripts/sample_cfg.sh
 ```
 
 ## Evaluate
-- Run sampling and evaluation for unconditional CIFAR-10
+- To generate samples and calculate the FID score for a trained unconditional model, run:
 ```bash
 cd MeanFlow
 sh scripts/evaluate.sh
@@ -49,7 +54,7 @@ sh scripts/evaluate.sh
 
 ## Acknowledgements
 
-This implementation builds upon:
+This implementation is based on or inspired by the code from the following repositories:
 - [SongUnet](https://github.com/NVlabs/edm/blob/main/training/networks.py)
 - [REPA](https://github.com/sihyun-yu/REPA/tree/main)
 - [MeanFlow](https://github.com/zhuyu-cs/MeanFlow)
